@@ -302,7 +302,7 @@ cib_digester_cb(gpointer data)
         free(ping_digest);
         ping_digest = NULL;
         ping_modified_since = FALSE;
-        snprintf(buffer, 32, U64T, ping_seq);
+        snprintf(buffer, 32, U64T, (unsigned long long int) ping_seq);
         crm_trace("Requesting peer digests (%s)", buffer);
 
         crm_xml_add(ping, F_TYPE, "cib");
