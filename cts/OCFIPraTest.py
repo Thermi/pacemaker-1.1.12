@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/bin/env python2
 
 '''OCF IPaddr/IPaddr2 Resource Agent Test'''
 
