@@ -76,7 +76,7 @@ pengine_LDADD	= $(top_builddir)/lib/cib/libcib.la $(COMMONLIBS)
 
 install-exec-local:
 	$(mkinstalldirs) $(DESTDIR)/$(PE_STATE_DIR)
-	-chown $(CRM_DAEMON_USER) $(DESTDIR)/$(PE_STATE_DIR)
+	# -chown $(CRM_DAEMON_USER) $(DESTDIR)/$(PE_STATE_DIR)
 	-chgrp $(CRM_DAEMON_GROUP) $(DESTDIR)/$(PE_STATE_DIR)
 	-chmod 750 $(DESTDIR)/$(PE_STATE_DIR)
 
